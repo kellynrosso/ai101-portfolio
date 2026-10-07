@@ -1,0 +1,7 @@
+# Reflection draft — review and personalize before submission
+
+This project adapts the Flight Lab for psychology students who want to compare how slower and faster movement feels. The pitch connects simulated speed and position data with a simple observation activity. AI proposed a Slow Observation button and added the code that sets the speed to 20 meters per second. It also added an explanation of the activity. I still need to review the change in the browser and record my own observations before submitting.
+
+The assistant ran the starter’s seven movement tests in Node, and all seven passed. For the break-and-repair exercise, it removed the time multiplier, `* dt`, from the distance calculation. The duration-consistency test failed because movement was being calculated per frame instead of using elapsed time. Restoring the multiplier made all seven tests pass again. Those logs are included as evidence, but they do not prove that the globe renders or the new button works in a browser.
+
+A limitation is that this project is a simplified simulation, not a validated psychology experiment. It cannot establish how speed affects attention or time perception. The assistant checked Cesium documentation for coordinate order and height units. The location stays labeled as an approximate teaching origin. My remaining contribution is to complete the warm-up, browser checks, and partner review, then update this reflection with what I actually did and learned.
