@@ -1,0 +1,22 @@
+ID,Check,Expected result,Actual result,Pass/fail,Evidence
+N1,Pause preserves position,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+N2,North increases latitude,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+N3,East increases longitude,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+N4,Heading wraps in both directions,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+N5,Height limits clamp,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+N6,Zero speed keeps position,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+N7,Duration consistency,Provided assertion returns true,true (Node execution by AI assistant),PASS,evidence/repaired-node.txt
+B1,Original starter movement checkpoint,Seven provided assertions pass,7/7 passed in Node; rendering not checked,PASS,evidence/baseline-node.txt
+B2,Remove * dt,Duration consistency fails,6 pass; duration consistency fails,PASS (expected failure),evidence/broken-node.txt
+B3,Restore * dt,All seven pass,7/7 pass,PASS,evidence/repaired-node.txt
+M1,Load globe (provisional; match Canvas),Grid globe loads; initial paused state visible,Not run,PENDING,Add browser screenshot/observation
+M2,Fly/Pause (provisional; match Canvas),Position changes on Fly and stops on Pause,Not run,PENDING,Add browser screenshot/observation
+M3,Heading (provisional; match Canvas),Left/Right change heading by 10 degrees with wrap,Not run,PENDING,Add browser screenshot/observation
+M4,Speed (provisional; match Canvas),0 stops movement; out-of-range values clamp to 0–250,Not run,PENDING,Add browser screenshot/observation
+M5,Height (provisional; match Canvas),Values clamp to 50–5000 m and readout updates,Not run,PENDING,Add browser screenshot/observation
+M6,Reset/tab switch (provisional; match Canvas),Reset restores initial state; switching tabs pauses,Not run,PENDING,Add browser screenshot/observation
+U1,Slow Observation,Sets 20 m/s; input/readout agree; no jump or pause-state change,Not run in browser,PENDING,Add screenshot
+U2,Reset after slow mode,Speed returns to 70 m/s,Not run in browser,PENDING,Add screenshot
+H1,tests.html browser execution,Seven PASS entries,Node equivalent passed; browser page not run,PENDING,Add screenshot
+P1,Partner reproduction and improvement,Partner follows README; one real improvement recorded,Not performed,PENDING,Add feedback and change
+W1,Code Warm-Up,Complete instructor page 4,Page not supplied; not performed,PENDING,Student completion
